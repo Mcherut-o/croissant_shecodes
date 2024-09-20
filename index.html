@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Croissants!</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(254, 255, 165) 0%,
+          rgb(255, 232, 182) 90%
+        );
+        font-family: "Roboto";
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        background-color: #ed9f66;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(241, 6, 241, 0.1);
+        padding: 40px;
+        text-align: center;
+        max-width: 600px;
+      }
+      .highlight {
+        color: #f1e4e4;
+      }
+      .coder {
+        justify-content: center;
+      }
+      h1 {
+        font-size: 👍 7rem;
+        color: #fcfbf9;
+        margin-bottom: 20px;
+      }
+      h4 {
+        color: #0e0e0e;
+      }
+
+      p {
+        line-height: normal;
+      }
+      .button {
+        background-color: #132743;
+        color: #f1e4e4;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bolder;
+        transition: background-color 0.3s ease;
+      }
+      .button:hover {
+        background-color: #407088;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🥐 CROISSANTS</h1>
+
+      <h2>Discover the SAVORY taste of croissants!</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/062/original/croissant.jpeg?1711010414"
+      />
+      <hr />
+      <p>
+        <em>
+          <strong
+            >Croissants are a type of pastry that originated in France.
+          </strong></em
+        ><br />
+        They are known for their flaky, buttery texture and crescent shape.<br />
+        Making croissants is a labor-intensive process that involves multiple
+        steps of rolling,<br />
+        folding, and chilling the dough to create the flaky layers.<br />
+        The dough is then shaped into crescents, proofed, and baked until golden
+        brown.<br />
+        While the classic croissant is plain, there are many variations
+        available, including chocolate-filled, almond-filled, or savory options
+        with cheese or ham. <br />
+        Despite their indulgent nature, they can provide some benefits when
+        enjoyed in moderation.<br />
+        They can be a
+        <span class="highlight">Source of energy</span>
+        due to their carbohydrate content, <br />and they can also contribute to
+        a feeling of satisfaction and enjoyment when consumed as part of a
+        balanced diet.<br />
+        <em>
+          <strong
+            >It's best to enjoy them occasionally as a treat rather than as a
+            staple in your diet.</strong
+          ></em
+        ><br />
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Croissant"
+        >Click here to learn more</a
+      >
+      <hr />
+
+      <button class="button" id="getDailyInsights()">Get daily insights</button
+      ><br />
+
+      <h4><span class="Coder">Coded by Mercyline Cheruto</span></h4>
+    </div>
+
+    <script>
+      let getDailyInsightsButton = document.querySelector("button");
+      getDailyInsightsButton.addEventListener("click", getDailyInsights);
+      function getDailyInsights() {
+        let name = prompt("What is your name?");
+        let croissant = prompt("How many croissants can you take in a day?");
+        if (croissant >= 4) {
+          alert(
+            "I see you're quite the croissant lover! Feel free to enjoy more of it as you await our email notification. Have a wonderful evening ahead!"
+          );
+        } else {
+          alert(
+            "Opting for just a couple to nothing? That's still okay though! Enjoy your evening."
+          );
+        }
+      }
+    </script>
+  </body>
+</html>
